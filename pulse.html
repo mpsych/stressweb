@@ -1,0 +1,27 @@
+<html>
+  <head> 
+
+    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+    <script>
+      const myOnnxSession = new onnx.InferenceSession(disabled_optimizers=["EliminateDropout"]);
+
+      myOnnxSession.loadModel("models/pulse2.onnx").then(() => {
+
+        const inputs = [
+          new Tensor(new Float32Array([1.0, 2.0, 3.0, 4.0]), "float32", [32, 32, 32]),
+        ];
+
+        myOnnxSession.run(inputs).then((output) => {
+
+          const outputTensor = output.values().next().value;
+          console.log(`model output tensor: ${outputTensor.data}.`);
+
+        });
+      });
+    </script>
+
+  </head>
+
+  <body>
+  </body>
+</html>
