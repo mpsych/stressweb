@@ -107,18 +107,18 @@ class PhysNet(nn.Module):
 
         x = self.MaxpoolSpa(x_visual1616)  # x [64, T/4, 8,8]
 
-        x = self.ConvBlock8(x)  # x [64, T/4, 8, 8]
-        x = self.ConvBlock9(x)  # x [64, T/4, 8, 8]
-        # x = self.ConvBlock8(F.dropout(x, p=0.2))  # x [64, T/4, 8, 8]
-        # x = self.ConvBlock9(F.dropout(x, p=0.2))  # x [64, T/4, 8, 8]
+        # x = self.ConvBlock8(x)  # x [64, T/4, 8, 8]
+        # x = self.ConvBlock9(x)  # x [64, T/4, 8, 8]
+        x = self.ConvBlock8(F.dropout(x, p=0.2))  # x [64, T/4, 8, 8]
+        x = self.ConvBlock9(F.dropout(x, p=0.2))  # x [64, T/4, 8, 8]
 
         x = self.upsample(x)  # x [64, T/2, 8, 8]
         x = self.upsample2(x)  # x [64, T, 8, 8]
         # h = x.register_hook(self.activations_hook)
 
         x = self.poolspa(x)  # x [64, T, 1, 1]
-        x = self.ConvBlock10(x)  # x [1, T, 1,1]
-        # x = self.ConvBlock10(F.dropout(x, p=0.5))  # x [1, T, 1,1]
+        # x = self.ConvBlock10(x)  # x [1, T, 1,1]
+        x = self.ConvBlock10(F.dropout(x, p=0.5))  # x [1, T, 1,1]
 
 
         #print(x.size(), length)

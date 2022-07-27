@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+<mapping>
+	<map>
+		<framework name="131" output_port_id="131" />
+		<IR name="131" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="131" output_port_id="input.1" />
+		<IR name="131" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="input.4" output_port_id="input.4" />
+		<IR name="input.4" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::MaxPool_83" output_port_id="onnx::MaxPool_83" />
+		<IR name="onnx::MaxPool_83" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.8" output_port_id="input.8" />
+		<IR name="input.8" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.16" output_port_id="input.16" />
+		<IR name="input.16" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_87" output_port_id="onnx::Conv_87" />
+		<IR name="onnx::Conv_87" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.24" output_port_id="input.24" />
+		<IR name="input.24" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::MaxPool_90" output_port_id="onnx::MaxPool_90" />
+		<IR name="onnx::MaxPool_90" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.28" output_port_id="input.28" />
+		<IR name="input.28" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.36" output_port_id="input.36" />
+		<IR name="input.36" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_94" output_port_id="onnx::Conv_94" />
+		<IR name="onnx::Conv_94" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.44" output_port_id="input.44" />
+		<IR name="input.44" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::MaxPool_97" output_port_id="onnx::MaxPool_97" />
+		<IR name="onnx::MaxPool_97" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.48" output_port_id="input.48" />
+		<IR name="input.48" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.56" output_port_id="input.56" />
+		<IR name="input.56" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Conv_101" output_port_id="onnx::Conv_101" />
+		<IR name="onnx::Conv_101" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.64" output_port_id="input.64" />
+		<IR name="input.64" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::MaxPool_104" output_port_id="onnx::MaxPool_104" />
+		<IR name="onnx::MaxPool_104" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.68" output_port_id="input.68" />
+		<IR name="input.68" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.76" output_port_id="input.76" />
+		<IR name="input.76" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="input.80" output_port_id="input.80" />
+		<IR name="input.80" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.88" output_port_id="input.88" />
+		<IR name="input.88" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::ConvTranspose_115" output_port_id="onnx::ConvTranspose_115" />
+		<IR name="onnx::ConvTranspose_115" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.96" output_port_id="input.96" />
+		<IR name="input.96" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::ConvTranspose_118" output_port_id="onnx::ConvTranspose_118" />
+		<IR name="onnx::ConvTranspose_118" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.104" output_port_id="input.104" />
+		<IR name="input.104" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="input.108" output_port_id="input.108" />
+		<IR name="input.108" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="input.112" output_port_id="input.112" />
+		<IR name="input.112" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="ConvBlock10.weight" output_port_id="ConvBlock10.weight" />
+		<IR name="ConvBlock10.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="onnx::Reshape_125" output_port_id="onnx::Reshape_125" />
+		<IR name="onnx::Reshape_125" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="onnx::Reshape_134" output_port_id="onnx::Reshape_134" />
+		<IR name="onnx::Reshape_134" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="130" output_port_id="130" />
+		<IR name="130" output_port_id="2" />
+	</map>
+</mapping>
